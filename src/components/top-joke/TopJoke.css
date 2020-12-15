@@ -3,7 +3,7 @@
   text-align: left;
 }
 
-.randomJoke p {
+.randomJoke .joke {
   font-size: 1.5rem;
   color: #8A6D21;
   width: 70%;

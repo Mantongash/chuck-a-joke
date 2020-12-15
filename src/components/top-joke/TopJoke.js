@@ -5,7 +5,7 @@ function TopQuote({joke}){
   return (
     <div className="randomJoke">
     <p className="quotation">"</p>
-    <p>{joke}</p>
+    <p className="joke">{joke}</p>
     </div>
   )
 }
