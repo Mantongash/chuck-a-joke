@@ -1,4 +1,5 @@
 import "./Header.css"
+import "./images/Norris.svg"
 function Header() {
   return (
     <div>
