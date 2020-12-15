@@ -1,4 +1,5 @@
 import React from 'react';
+import './TopQuote.css'
 
 function TopQuote({quote}){
   return (
