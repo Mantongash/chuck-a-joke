@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/header/Header';
 import TopQuote from './components/top-quote/TopQuote';
 import Categories from './components/categories';
+import Jokes from './components/jokes';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <TopQuote/>
     <div>
     <Categories/>
+    <Jokes/>
     </div>
     </main>
     </div>
