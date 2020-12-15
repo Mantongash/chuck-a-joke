@@ -4,6 +4,7 @@ import Header from './components/header/Header';
 import TopQuote from './components/top-quote/TopQuote';
 import Categories from './components/categories/Categories';
 import Jokes from './components/jokes/Jokes';
+import Footer from './components/footer/Footer';
 
 class App extends Component {
   constructor(props){
@@ -32,6 +33,7 @@ class App extends Component {
         <Jokes/>
         </div>
         </main>
+        <Footer/>
         </div>
     );
 
