@@ -5,7 +5,7 @@ function Header() {
     <header>
       <img src={norris} alt="Chuck Norris Picture" className="norris"/>
       <h1 className="heading">CHUCK a JOKE</h1>
-      <p>Filter Chuck Norris Jokes by category.</p>
+      <p className="subheading">Filter Chuck Norris Jokes by category.</p>
     </header>
   );
 }
