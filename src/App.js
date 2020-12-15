@@ -1,44 +1,46 @@
-import React, {Component}  from 'react';
-import './App.css';
-import Header from './components/header/Header';
-import TopQuote from './components/top-quote/TopQuote';
-import Categories from './components/categories/Categories';
-import Jokes from './components/jokes/Jokes';
-import Footer from './components/footer/Footer';
+import React, { Component } from "react";
+import "./App.css";
+import Header from "./components/header/Header";
+import TopQuote from "./components/top-quote/TopQuote";
+import Categories from "./components/categories/Categories";
+import Jokes from "./components/jokes/Jokes";
+import Footer from "./components/footer/Footer";
 
 class App extends Component {
-  constructor(props){
-    super(props)
+  constructor(props) {
+    super(props);
+    this.state = {
+      randomquote:""
+    }
 
     this.fetchRandomQuote = this.fetchRandomQuote.bind(this);
   }
-  fetchRandomQuote(){
-    const jokes=fetch("https://api.chucknorris.io/jokes/random");
-    jokes.then(res=>res.json())
-    .then(data=>data.value);
+  fetchRandomQuote() {
+    const url = "https://api.chucknorris.io/jokes/random";
+    return fetch(url)
+      .then((res) => res.json())
+      .then((data) => this.setState({ randomJoke: data.value }));
   }
 
-  componentDidMount(){
+  componentDidMount() {
+    console.log(this.state);
     return this.fetchRandomQuote();
   }
-  render(){
-
+  render() {
     return (
-        <div>
-        <Header/>
+      <div>
+        <Header />
         <main>
-        <TopQuote quote={this.fetchRandomQuote()}/>
-        <div>
-        <Categories/>
-        <Jokes/>
-        </div>
+          <TopQuote quote={this.state.randomJoke} />
+          <div>
+            <Categories />
+            <Jokes />
+          </div>
         </main>
-        <Footer/>
-        </div>
+        <Footer />
+      </div>
     );
-
   }
 }
-
 
 export default App;
