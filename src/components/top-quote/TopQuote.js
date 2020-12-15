@@ -1,8 +1,8 @@
 import React from 'react';
 
-function TopQuote(){
+function TopQuote({quote}){
   return (
-    <h2>Top Quote is working</h2>
+    <p>{quote}</p>
   )
 }
 
