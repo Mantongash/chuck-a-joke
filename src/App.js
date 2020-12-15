@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Header from "./components/header/Header";
-import TopQuote from "./components/top-quote/TopQuote";
+import TopQuote from "./components/top-joke/TopJoke";
 import Categories from "./components/categories/Categories";
 import Jokes from "./components/jokes/Jokes";
 import Footer from "./components/footer/Footer";

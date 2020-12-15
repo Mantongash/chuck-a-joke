@@ -1,5 +1,5 @@
 import React from 'react';
-import './TopQuote.css'
+import './TopJoke.css'
 
 function TopQuote({quote}){
   return (
