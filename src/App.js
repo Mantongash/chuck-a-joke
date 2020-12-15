@@ -31,7 +31,7 @@ class App extends Component {
       <div>
         <Header />
         <main>
-          <TopQuote quote={this.state.randomJoke} />
+          <TopQuote joke={this.state.randomJoke} />
           <div>
             <Categories />
             <Jokes />

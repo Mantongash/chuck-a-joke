@@ -1,11 +1,11 @@
 import React from 'react';
 import './TopJoke.css'
 
-function TopQuote({quote}){
+function TopQuote({joke}){
   return (
     <div className="randomJoke">
     <p className="quotation">"</p>
-    <p>{quote}</p>
+    <p>{joke}</p>
     </div>
   )
 }
