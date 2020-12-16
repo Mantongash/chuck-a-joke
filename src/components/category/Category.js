@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Category(){
+function Category({category}){
   return (
-    <h2>Categories is working</h2>
+    <p>{category}</p>
   )
 }
 
