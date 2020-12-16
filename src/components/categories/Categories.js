@@ -3,10 +3,8 @@ import Category from '../category/Category';
 
 function Categories({categories}){
   return categories.map((category, index)=>{
-    return  (
-      <div className="categories">
+    return (
     <Category key={index} category={category} className="category"/>
-    </div>
     )
   });
 }
