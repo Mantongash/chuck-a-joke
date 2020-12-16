@@ -5,3 +5,5 @@ function CategoryList(){
     <h3>Category List works</h3>
   )
 }
+
+export default CategoryList;
