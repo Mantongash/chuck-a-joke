@@ -1,7 +1,12 @@
 .jokes {
+  text-align: center;
   margin: 2rem;
-  padding: 2rem;
+  padding: 3rem;
   border: 2px solid #8A6D21;
   height: 100%;
   width: 300px;
+  background-image: url(./images/Joy.png);
+  background-position: 50% 5px;
+  background-repeat: no-repeat;
+  background-size: 10%;
 }
