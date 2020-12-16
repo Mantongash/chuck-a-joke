@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Header from "./components/header/Header";
 import TopQuote from "./components/top-joke/TopJoke";
-import CategoryList from "./components/categories/Categories";
+import Categories from "./components/categories/Categories";
 import Jokes from "./components/jokes/Jokes";
 import Footer from "./components/footer/Footer";
 
@@ -45,7 +45,7 @@ class App extends Component {
         <main>
           <TopQuote joke={this.state.randomJoke} />
           <div className="flex">
-            <CategoryList categories={this.state.categories}/>
+            <Categories categories={this.state.categories}/>
             <Jokes />
           </div>
         </main>
