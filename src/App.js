@@ -45,7 +45,9 @@ class App extends Component {
         <main>
           <TopQuote joke={this.state.randomJoke} />
           <div className="flex">
+          <div>
             <Categories categories={this.state.categories}/>
+            </div>
             <Jokes />
           </div>
         </main>
