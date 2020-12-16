@@ -1,4 +1,8 @@
+
+
 .flex {
+  background:rgba(138,109,33,0.16);
+  border-top: 5px solid #8A6D21;
   display: flex;
   flex-wrap: wrap;
 }

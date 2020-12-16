@@ -1,5 +1,5 @@
 import "./Header.css"
-import norris from "./images/Norris.svg"
+import norris from "./images/Norris.png"
 function Header() {
   return (
     <header>

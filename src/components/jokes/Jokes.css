@@ -1,7 +1,11 @@
 .jokes {
   text-align: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
   margin: 2rem;
   padding: 3rem;
+  color: #8A6D21;
+  background: rgba(138,109,33,0.2);
   border: 2px solid #8A6D21;
   height: 100%;
   width: 300px;
