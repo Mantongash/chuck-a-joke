@@ -1,4 +1,5 @@
 import React from 'react';
+import './Jokes.css'
 
 function Jokes({jokes}){
   return (
