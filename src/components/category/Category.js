@@ -3,7 +3,7 @@ import './Category.css'
 
 function Category({category}){
   return (
-    <p>{category}</p>
+    <p className="category">{category}</p>
   )
 }
 
