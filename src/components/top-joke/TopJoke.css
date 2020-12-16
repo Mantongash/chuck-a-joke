@@ -1,11 +1,24 @@
-.randomJoke {
+.quotedJoke {
   padding: 3rem 0;
   text-align: left;
-}
-
-.randomJoke .joke {
-  font-size: 1.5rem;
-  color: #8A6D21;
+  display: flex;
+  margin-left: 3em;
   width: 70%;
   margin: 0 auto;
+}
+
+.quotedJoke .joke {
+  font-size: 1.5rem;
+  color: #8A6D21;
+  
+}
+
+.quotation {
+  height: 5rem;
+  width: 5rem;
+  background-image: url(./images/quote.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  
 }

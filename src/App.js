@@ -10,10 +10,19 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      randomquote:""
+      randomquote:"",
+      categories: []
     }
 
     this.fetchRandomQuote = this.fetchRandomQuote.bind(this);
+    this.fetchCategories = this.fetchCategories.bind(this);
+  }
+  fetchCategories() {
+    const url = "https://api.chucknorris.io/jokes/categories";
+    return fetch(url)
+    .then((res) => res.json())
+    .then((data) => this.setState({ categories: data}));
+
   }
   fetchRandomQuote() {
     const url = "https://api.chucknorris.io/jokes/random";
@@ -23,8 +32,9 @@ class App extends Component {
   }
 
   componentDidMount() {
-    console.log(this.state);
-    return this.fetchRandomQuote();
+    console.log(this.state.categories);
+    this.fetchRandomQuote();
+    this.fetchCategories();
   }
   render() {
     return (
@@ -32,7 +42,7 @@ class App extends Component {
         <Header />
         <main>
           <TopQuote joke={this.state.randomJoke} />
-          <div>
+          <div className="flex">
             <Categories />
             <Jokes />
           </div>
