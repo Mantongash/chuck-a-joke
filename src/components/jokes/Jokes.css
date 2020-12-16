@@ -1,4 +1,7 @@
 .jokes {
   margin: 2rem;
+  padding: 2rem;
   border: 2px solid #8A6D21;
+  height: 100%;
+  width: 300px;
 }
