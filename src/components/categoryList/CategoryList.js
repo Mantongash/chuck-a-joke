@@ -1,9 +1,10 @@
 import React from 'react';
 
-function CategoryList(){
-  return (
-    <h3>Category List works</h3>
-  )
+function CategoryList({categories}){
+  const categoryList = categories.map((category, index)=>{
+    return  <p key={index}>{category}</p>
+  })
+  return categoryList;
 }
 
 export default CategoryList;
