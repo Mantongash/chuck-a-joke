@@ -2,14 +2,12 @@
   padding: .5em;
   text-transform: capitalize;
   cursor: pointer;
+  border-bottom: 2px solid #8A6D21;
+  color: #8A6D21;
 }
 
-.category::after {
-  content:"";
-  height: 2px;
-  width: 50%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  border-bottom: 2px solid #000;
+.category:hover,
+.category:active {
+  background: #8A6D21;
+  color: #fff;
 }
