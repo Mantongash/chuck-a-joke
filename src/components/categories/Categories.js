@@ -1,10 +1,10 @@
 import React from 'react';
+import Category from '../category/Category';
 
-function CategoryList({categories}){
-  const categoryList = categories.map((category, index)=>{
-    return  <p key={index}>{category}</p>
-  })
-  return categoryList;
+function Categories({categories}){
+  return categories.map((category, index)=>{
+    return  <Category key={index} category={category}/>
+  });
 }
 
-export default CategoryList;
+export default Categories;
