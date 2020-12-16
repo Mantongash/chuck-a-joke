@@ -12,12 +12,15 @@ class App extends Component {
     this.state = {
       randomJoke:"",
       categories: [],
-      jokes:""
+      jokes:"",
+      
     }
 
     this.fetchRandomQuote = this.fetchRandomQuote.bind(this);
     this.fetchCategories = this.fetchCategories.bind(this);
     this.fetchJokes = this.fetchJokes.bind(this);
+
+    this.handleClickCategory = this.handleClickCategory.bind(this);
   }
 
   fetchCategories() {
@@ -41,13 +44,20 @@ class App extends Component {
       .then((data) => this.setState({jokes: data.value}));
   }
 
+  handleClickCategory(category){
+
+    this.fetchJokes(category);
+    console.log(category);
+
+  }
+
 
   componentDidMount() {
     
     this.fetchRandomQuote();
     this.fetchCategories();
-    this.fetchJokes();
-    // console.log(this.state.categories);
+    this.fetchJokes("animal");
+    
   }
   render() {
     return (
@@ -57,9 +67,9 @@ class App extends Component {
           <TopQuote joke={this.state.randomJoke} />
           <div className="flex">
           <div>
-            <Categories categories={this.state.categories}/>
+            <Categories categories={this.state.categories} handleClickCategory={this.handleClickCategory} jokes={this.state.jokes}/>
             </div>
-            <Jokes />
+            <Jokes jokes={this.state.jokes}/>
           </div>
         </main>
         <Footer />

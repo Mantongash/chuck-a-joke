@@ -1,9 +1,9 @@
 import React from 'react';
 import './Category.css'
 
-function Category({category}){
+function Category({category, handleClickCategory, jokes}){
   return (
-    <p className="category" onClick={()=>console.log(category)}>{category}</p>
+    <p className="category" onClick={()=>handleClickCategory(category)}>{category}</p>
   )
 }
 

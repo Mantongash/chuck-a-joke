@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Jokes(){
+function Jokes({jokes}){
   return (
-    <h2>Jokes is working</h2>
+    <p className="jokes">{jokes}</p>
   )
 }
 

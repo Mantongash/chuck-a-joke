@@ -7,7 +7,8 @@
 }
 
 .category:hover,
-.category:active {
+.category:active,
+.category:focus {
   background: #8A6D21;
   color: #fff;
 }
