@@ -12,10 +12,12 @@ class App extends Component {
     this.state = {
       randomJoke:"",
       categories: [],
+      jokes:""
     }
 
     this.fetchRandomQuote = this.fetchRandomQuote.bind(this);
     this.fetchCategories = this.fetchCategories.bind(this);
+    this.fetchJokes = this.fetchJokes.bind(this);
   }
 
   fetchCategories() {
@@ -32,11 +34,20 @@ class App extends Component {
       .then((data) => this.setState({ randomJoke: data.value }));
   }
 
+  fetchJokes(category){
+    const url = `https://api.chucknorris.io/jokes/random?category=${category}`;
+    return fetch(url)
+      .then((res) => res.json())
+      .then((data) => this.setState({jokes: data.value}));
+  }
+
+
   componentDidMount() {
     
     this.fetchRandomQuote();
     this.fetchCategories();
-    console.log(this.state.categories);
+    this.fetchJokes();
+    // console.log(this.state.categories);
   }
   render() {
     return (

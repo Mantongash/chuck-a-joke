@@ -3,7 +3,7 @@ import './Category.css'
 
 function Category({category}){
   return (
-    <p className="category">{category}</p>
+    <p className="category" onClick={()=>console.log(category)}>{category}</p>
   )
 }
 
