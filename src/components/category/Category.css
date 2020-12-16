@@ -1,4 +1,15 @@
 .category {
-  padding: 1em;
-  text-transform: uppercase;
+  padding: .5em;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.category::after {
+  content:"";
+  height: 2px;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid #000;
 }
