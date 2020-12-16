@@ -17,3 +17,11 @@ a {
   border-bottom: 1px solid #fff;
   padding: .2rem;
 }
+
+/* Media queries */
+@media (max-width:700px) {
+  .footer {
+    width: 100%;
+
+  }
+}

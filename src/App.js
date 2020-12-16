@@ -47,6 +47,7 @@ class App extends Component {
   handleClickCategory(category){
 
     this.fetchJokes(category);
+    category.classList.add("active");
     console.log(category);
 
   }
@@ -67,14 +68,14 @@ class App extends Component {
           <TopQuote joke={this.state.randomJoke} />
           <div className="main-content">
           <div className="flex container">
-          <div>
+          <div className="flex-categories">
             <Categories categories={this.state.categories} handleClickCategory={this.handleClickCategory} jokes={this.state.jokes}/>
             </div>
-            <Jokes jokes={this.state.jokes}/>
+            <Jokes jokes={this.state.jokes} className="container"/>
           </div>
           </div>
         </main>
-        <Footer />
+        <Footer className="container"/>
       </div>
     );
   }
