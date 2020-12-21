@@ -1,5 +1,5 @@
 # CHUCK a JOKE
-ChUCK a JOKE is a Single Page Application that displays random Chuck Norris jokes by category. It consumes api https://api.chucknorris.io/ API.
+ChUCK a JOKE is a Single Page Application that displays random Chuck Norris jokes by category. It consumes the https://api.chucknorris.io/ API.
 
 ## Live Link
 ---
@@ -25,11 +25,11 @@ You can view the project [here](https://mantongash.github.io/chuck-a-joke/) on y
 
  ## Contribution
  ---
- If you've found a bug and would like to fix it, Id love you to. Fix it and then create a PR.
+ If you've found a bug and would like to fix it or add a feature, Id love you to. Modify the code and create a PR.
 
  ## Known bugs
  ---
- 1. Due to the urgency of the project, it's not fully responsive. I'm currently working on that for mobile users.
+ 1. Due to the urgency of the project, it's not fully responsive. I'm currently working on that for mobile users. (* ***solved***)
 
  1. When you click a category, I would love for the focus to remain on the clicked category. I'm tweaking that to make it easier for users.
 

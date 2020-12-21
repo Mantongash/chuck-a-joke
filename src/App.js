@@ -13,6 +13,7 @@ class App extends Component {
       randomJoke:"",
       categories: [],
       jokes:"",
+      activeId:0
       
     }
 
@@ -44,11 +45,13 @@ class App extends Component {
       .then((data) => this.setState({jokes: data.value}));
   }
 
-  handleClickCategory(category){
+  handleClickCategory(category, index){
 
+    this.setState({activeId:index});
+    // const className = this.state.activeId == index?"active":"not active";
     this.fetchJokes(category);
-    category.classList.add("active");
     console.log(category);
+    console.log(this.state.activeId);
 
   }
 
@@ -69,7 +72,7 @@ class App extends Component {
           <div className="main-content">
           <div className="flex container">
           <div className="flex-categories">
-            <Categories categories={this.state.categories} handleClickCategory={this.handleClickCategory} jokes={this.state.jokes}/>
+            <Categories categories={this.state.categories} handleClickCategory={this.handleClickCategory} jokes={this.state.jokes} id={this.state.activeId}/>
             </div>
             <Jokes jokes={this.state.jokes} className="container"/>
           </div>
